@@ -1,13 +1,15 @@
 
 
 from flask import Blueprint, json, jsonify, request
+from utils.DatabaseUtils import *
 
-musicBlueprint = Blueprint('diseases_blueprint', __name__)
+musicBlueprint = Blueprint('music_blueprint', __name__)
 
 @musicBlueprint.route("/music", methods=['GET'])
-def get_diseases():
+def get_music():
     try:
-        return jsonify({"title":"hello", "author":"world"})
+        musics = fetchAllMusic()
+        return jsonify(musics)
     
     except Exception as e:
         return jsonify({'error': str(e)}), 500
