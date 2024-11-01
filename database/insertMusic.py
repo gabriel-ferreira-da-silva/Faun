@@ -12,10 +12,10 @@ with open("like a tattoo.mp3", 'rb') as f:
     like_a_tattoo = f.read()
 
 like_a_tattoo_mp3 = {
-    "tittle": "like a tattoo",
+    "title": "like a tattoo",
     "author": "sade",
     "album": "love deluxe",
-    "data_added": datetime.now(),
+    "date_added": datetime.now(),
     "alike":[],
     "audio": Binary(like_a_tattoo),
 }

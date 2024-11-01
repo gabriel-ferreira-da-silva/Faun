@@ -1,7 +1,9 @@
+import MusicForm from "../components/MusicForm/MusicForm"
+
 export default function AddMusicPage(){
     return(
         <div>
-            ahslsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdhfaksdf
+            <MusicForm></MusicForm>
         </div>
     )
 }

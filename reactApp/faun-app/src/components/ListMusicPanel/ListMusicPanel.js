@@ -1,6 +1,7 @@
 import MusicPanel from "../MusicPanel/MusicPanel";
 import { fetchAllMusic } from "../../services/musicServices";
 import { useEffect, useState } from "react";
+import style from './style.module.css'
 
 export default function ListMusicPanel() {
     const [musics, setMusics] = useState([]);
@@ -20,7 +21,7 @@ export default function ListMusicPanel() {
     }, []);
 
     return (
-        <div>
+        <div className={style.container}>
             {musics.map((music, index) => (
                 <div key={index}>
                     <MusicPanel music={music} />

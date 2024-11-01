@@ -1,11 +1,12 @@
+import style from './style.module.css'
+
 export default function MusicPanel({ music }) {
-    // Check if music is available
     if (!music) {
         return <div>No music data available.</div>;
     }
 
     return (
-        <div>
+        <div className={style.container}>
             <label>Title:</label>
             <label>{music.title || 'Unknown Title'}</label>
     
