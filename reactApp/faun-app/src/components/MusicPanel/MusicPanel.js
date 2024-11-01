@@ -12,6 +12,9 @@ export default function MusicPanel({ music }) {
     
             <label>Author:</label>
             <label>{music.author || 'Unknown Author'}</label>
+
+            <label>Author:</label>
+            <label>{music.author || 'Unknown Author'}</label>
         
             <label>Album:</label>
             <label>{music.album || 'Unknown Album'}</label>
