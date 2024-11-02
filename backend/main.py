@@ -1,8 +1,7 @@
 from flask import Flask
 from flask import Flask
 from flask_cors import CORS
-from server.MusicServer import musicBlueprint
-
+from server.routes.MusicRoutes import *
 app = Flask(__name__)
 CORS(app)
 

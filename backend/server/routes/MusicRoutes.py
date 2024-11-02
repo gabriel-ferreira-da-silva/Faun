@@ -1,7 +1,6 @@
-
-
 from flask import Blueprint, json, jsonify, request
-from utils.DatabaseUtils import *
+from ..utils.MusicUtils import *
+from ..services.MusicServices import *
 
 musicBlueprint = Blueprint('music_blueprint', __name__)
 
