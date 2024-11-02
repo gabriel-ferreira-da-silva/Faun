@@ -8,7 +8,7 @@ client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client['faun_database']
 music_collection = db['music']
 
-with open("like a tattoo.mp3", 'rb') as f:
+with open("Like A Tattoo.mp3", 'rb') as f:
     like_a_tattoo = f.read()
 
 like_a_tattoo_mp3 = {

@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
     ./build.sh
     cd ../backend || exit
     python3 main.py &
-    cd ../frontend/galeno || exit
+    cd ../reactApp/faun-app/src || exit
     npm start &
     cd ..
     echo "system is running"
